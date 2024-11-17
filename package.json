@@ -1,20 +1,18 @@
 {
-    "name": "KawPoWNOMP",
-    "version": "1.1.5",
-    "description": "An extremely efficient, highly scalable, KawPoW algorithm mining pool",
+    "name": "stratum-pool",
+    "version": "0.1.6",
+    "description": "High performance Stratum poolserver in Node.js",
     "keywords": [
         "stratum",
         "mining",
         "pool",
         "server",
         "poolserver",
+        "bitcoin",
         "Ravencoin",
-        "Sato",
-        "Zelantus",
-        "Splendidcoin",
-        "KawPoW"
+        "kawpow"
     ],
-    "homepage": "https://github.com/MiningCryptoLive/ravencoin-pool",
+    "homepage": "https://github.com/RavenCommunity/kawpow-stratum-pool",
     "bugs": {
         "url": "https://github.com/MiningCryptoLive-ravencoin-pool/issues"
     },
@@ -28,20 +26,20 @@
         "TheSeven",
         "Kris Klosterman"
     ],
-    "main": "init.js",
+    "main": "lib/index.js",
     "bin": {
         "block-notify": "./scripts/blockNotify.js"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/phoenixmax-ravencoin-pool.git"
+        "url": "git+https://github.com/RavenCommunity/kawpow-stratum-pool.git"
     },
-  "dependencies": {
-    "bitcoinjs-lib": "git+https://github.com/bitcoinjs/bitcoinjs-lib.git",
-    "merkle-bitcoin": "git+https://github.com/DirtyHarryDev/merkle-bitcoin.git,
-    "promise": "*",
-    "sha3": "git+https://github.com/phusion/node-sha3.git",
-    "3.npm": "^1.0.0",
+    "dependencies": {
+        "bitcoinjs-lib": "git+https://github.com/bitcoinjs/bitcoinjs-lib.git",
+        "merkle-bitcoin": "git+https://github.com/DirtyHarryDev/merkle-bitcoin.git",
+        "promise": "*",
+        "sha3": "^2.1.4",
+        "3.npm": "^1.0.0",
         "asn1": "^0.2.4",
         "async": "^2.6.3",
         "bcrypt-pbkdf": "^1.0.2",
@@ -79,37 +77,15 @@
         "request": "^2.88.0",
         "safe-buffer": "^5.1.2",
         "semver": "^5.7.1",
-        "sha3": "^2.1.4",
         "sma": "^0.1.1",
         "sshpk": "^1.15.2",
         "stratum-mcl": "git+https://github.com/MiningCryptoLive/phoenixmax-ravencoin-stratum.git",
         "winston": "^3.2.1",
         "winston-daily-rotate-file": "^3.5.1",
         "winston-transport": "^4.3.0"
-  },
- 
-  "deprecated": false,
-  "description": "High performance Stratum poolserver in Node.js",
-  "engines": {
-    "node": ">=8.17.0"
-  },
-  "homepage": "https://github.com/RavenCommunity/kawpow-stratum-pool",
-  "keywords": [
-    "stratum",
-    "mining",
-    "pool",
-    "server",
-    "poolserver",
-    "bitcoin",
-    "Ravencoin",
-    "kawpow"
-  ],
-  "license": "GPL-2.0",
-  "main": "lib/index.js",
-  "name": "stratum-pool",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/RavenCommunity/kawpow-stratum-pool.git",
-  },
-  "version": "0.1.6"
+    },
+    "deprecated": false,
+    "engines": {
+        "node": ">=8.17.0"
+    }
 }
